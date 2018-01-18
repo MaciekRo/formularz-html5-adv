@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Prosty Formularz <br><span>Podstawy formularza</span></h1>
+    <fieldset>
+        <legend>Informacje o kliencie</legend>
+        <form autocomplete="on" id="form1">
+            <label for="name">Imię:</label>
+            <input type="text" name="name" id="name" autofocus placeholder="Podaj swoje imię" required><br><br>
+            <label for="telephone">Numer telefonu:</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Telefon 1-234-567-8910" required maxlength="14" pattern="[0-9]{1}[-][0-9]{3}[-][0-9]{3}[-][0-9]{4}"><br><br>
+            <label for="mail">Adres e-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Podaj adres e-mail" required multiple>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Książki</legend>
+        <form autocomplete="on" id="form2">
+            <label for="books"></label>
+            <input list="books">
+            <datalist id="books">
+                <option value="Tytus Romek i Atomek"></option>
+                <option value="Rok 1984">
+                <option value="Miecz Przeznaczenia">
+                <option value="Odyseja Kosmiczna 2001">
+            </datalist>
+            <label for="quantity">Ilość (Maksymanie 5):</label>
+            <input type="number" min="1" max="5">
+        </form>
+    </fieldset>
+    <button type="button" onclick="alert('Formularz wysłany :)')">Wyślij mnie!</button>
+
+
+
+
+
+
+</body>
+
+</html>
